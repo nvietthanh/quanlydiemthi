@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+#app{
+    margin: 0 auto;
+    width: 1140px;
+    background-color: #fff;
+}
+.modal{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 101;
+}
+.modal-open{
+    overflow-y: hidden;
+}
+.modal-open .modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-open{
+    display: block !important;
+}
+
+button{
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #4999d2;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 10px;
+}
+button:active{
+    transform: scale(0.96);
+}

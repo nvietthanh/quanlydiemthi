@@ -1,0 +1,294 @@
+.container{
+    width: 100%;
+    min-height: 550px;
+    padding-bottom: 120px;
+}
+.container-infor{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.infor-wrap{
+    margin-top: 24px;
+    margin-bottom: 12px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+.infor-name{
+    margin-right: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.container-infor button{
+    width: 120px;
+}
+.container-modify{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+.modify-content{
+    color: red;
+    font-size: 1.2rem !important;
+}
+.container-modify div{
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+
+.container-menu{
+    margin-top: 18px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.menu-wrap{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+.menu-name{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.select{
+    height: 30px;
+    outline: none;
+    margin-left: 12px;
+    display: flex;
+}
+.select > select{
+    padding-left: 4px;
+    padding-right: 5px;
+    width: 100%;
+    min-width: 70px;
+    outline: none;
+    cursor: pointer;
+}
+.select > select > option{
+    font-size: 0.9rem;
+}
+
+
+
+.container-table{
+    padding: 24px 12px 0 12px;
+    border: 1px solid #fff;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+.container-table table{
+    width: 100%;
+}
+.container-table thead{
+    background-color: rgb(48, 122, 169);
+    color: #fff;
+    font-size: 0.8rem;
+}
+.container-table thead td{
+    border: 1px solid #fff;
+    height: 36px;
+}
+.container-table tbody{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.07);
+    font-size: 0.8rem;
+}
+.container-table tbody td{
+    border: 1px solid #fff;
+    height: 40px;
+}
+td input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.005);
+    text-align: center;
+    color: black;
+    cursor: text
+}
+td button{
+    display: inline-block;
+    width: 30px;
+    margin-right: 5px;
+}
+.btn-delete-score,
+.btn-edit-score{
+    position: relative;
+    display: inline-block;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    line-height: 27px;
+    text-align: center;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+.btn-edit-score{
+    font-size: 1.05rem;
+    margin-right: 2px;
+    color: goldenrod;
+}
+.btn-edit-score::after{
+    top: calc(100% + 4px);
+    right: 0;
+    position: absolute;
+    content: "Thêm / sửa";
+    width: calc(100% + 39px);
+    color: #fff;
+    background-color: rgb(109, 114, 117);
+    font-size: 0.8rem;
+    padding: 4px 12px;
+    border-radius: 10px;
+    display: none;
+    z-index: 100;
+}
+.btn-delete-score::after{
+    top: calc(100% + 4px);
+    right: 0;
+    position: absolute;
+    content: "Xoá";
+    color: #fff;
+    background-color: rgb(109, 114, 117);
+    font-size: 0.8rem;
+    padding: 4px 12px;
+    border-radius: 10px;
+    display: none;
+    z-index: 100;
+}
+.btn-delete-score{
+    color: crimson;
+}
+.btn-delete-score:hover,
+.btn-edit-score:hover{
+    background-color: rgba(0, 0, 0, 0.07);
+}
+.btn-edit-score:hover::after,
+.btn-delete-score:hover::after{
+    display: block;
+}
+.btn-delete-score:hover:active,
+.btn-edit-score:hover:active{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.selected{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal-edit-score{
+    width: 950px;
+    height: 600px;
+    background-color: #fff;
+    display: none;
+}
+.edit-score-form{
+    margin: 15px;
+    padding: 15px;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+.form-name{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.form-student-infor{
+    margin-top: 24px;
+}
+.form-student-wrap{
+    margin-left: 24px;
+    margin-bottom: 8px;
+}
+.form-student-content{
+    display: inline-block;
+    width: 130px;
+    font-weight: 600;
+}
+.form-student-id,
+.form-student-name,
+.form-student-birthday{
+    display: inline-block;
+    margin-left: 12px;
+    font-size: 0.96rem;
+}
+.form-table-score{
+    margin-top: 62px;
+}
+.form-table-score span{
+    margin-left: 24px;
+}
+
+.edit-score-table{
+    padding-top: 24px;
+    margin: 0 auto;
+    width: 800px;
+    text-align: center;
+}
+.edit-score-table table{
+    width: 100%;
+    font-weight: 600;
+}
+.edit-score-table thead{
+    font-size: 0.9rem;
+    background-color: rgb(48, 122, 169);
+    color: #fff;
+}
+.edit-score-table thead td{
+    background-color: rgba(0, 0, 0, 0.07);
+    border: 1px solid #fff;
+    height: 36px;
+}
+.edit-score-table tbody{
+    background-color: rgb(164, 167, 168);
+    font-size: 0.9rem;
+    color: #fff;
+}
+.edit-score-table tbody td{
+    border: 1px solid #fff;
+    height: 40px;
+}
+td input{
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    text-align: center;
+    color: #fff;
+    cursor: text;
+}
+td input:focus{
+    border: 1px solid aqua;
+    box-shadow: 0 0 10px aqua;
+}
+.edit-score-wrap{
+    margin-top: 64px;
+    margin-right: 52px;
+    display: flex;
+    justify-content: right;
+}
+.edit-score-wrap button{
+    margin-right: 18px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+.edit-score-wrap input{
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #4999d2;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 10px;
+}
